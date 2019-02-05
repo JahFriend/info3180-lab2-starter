@@ -1,0 +1,36 @@
+
+{% extends "base.html" %}
+
+{% block main %}
+
+<link rel="stylesheet" href="{{ url_for('static', filename='/css/app.css') }}" type="text/css" />
+
+<div class="profile">
+    <img src="{{ url_for('static', filename='download.jpeg' ) }}"/>
+    <h1>anonymous</h1>
+    <p><span class="title">Today's date is</span></p>
+    <p><span class="title">Username:</span> Anon</p>
+    <p><span class="title">Location:</span> Kingston, Jamaica</p>
+    <p><span class="title">Date Joined:</span> February 7, 2018</p>
+
+<div class="bottom">
+    <p class="details">Lorem ipsum dolor sit amet, consectetur adipisicing elit,. </p>
+    <div class="stat">
+       <span class="value">650</span>
+       <span class="label">Posts</span>
+    </div>
+    <div class="stat">
+       <span class="value">127</span>
+       <span class="label">Following</span>
+    </div>
+    <div class="stat">
+       <span class="value">875</span>
+       <span class="label">Followers</span>
+    </div>
+    <a target="_blank" href="https://github.com/JahFriend/"><button id="button" >Follow</button></a>
+</div>
+</div>
+
+
+
+{% endblock %}
