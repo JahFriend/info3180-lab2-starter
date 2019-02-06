@@ -8,7 +8,8 @@
 <div class="profile">
     <img src="{{ url_for('static', filename='download.jpeg' ) }}"/>
     <h1>anonymous</h1>
-    <p><span class="title">Today's date is</span></p>
+    <p><span class="title">Today's date is {{date}}</span></p>
+    {{date}}
     <p><span class="title">Username:</span> Anon</p>
     <p><span class="title">Location:</span> Kingston, Jamaica</p>
     <p><span class="title">Date Joined:</span> Marcb 13, 1971</p>
@@ -18,6 +19,7 @@
     <div class="stat">
        <span class="value">650</span>
        <span class="label">Posts</span>
+
     </div>
     <div class="stat">
        <span class="value">127</span>
